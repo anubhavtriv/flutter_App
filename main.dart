@@ -70,7 +70,7 @@ class _AfterSplashState extends State<AfterSplash> {
   String cmd;
   var r;
   void myweb(i) async {
-  url = "http://192.168.29.26/cgi-bin/web.py?q=$i";
+  url = "http://192.168.10.12/cgi-bin/web.py?q=$i";
   response = await http.get(url);
   setState(() {
       r = response.body;
